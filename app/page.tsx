@@ -1,3 +1,4 @@
+"use client"
 import { Questions } from "@/components/Faq/Questions";
 import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero";
@@ -9,25 +10,35 @@ import Courses from "@/components/courses/courses";
 import { Gallery } from "@/components/gallery/Gallery";
 import VideoPlay from "@/components/video_play";
 import Image from "next/image";
-
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+import Logo from '../app/assets/logo_sbk-removebg-preview.png'
 export default function Home() {
   return (
-   <>
-  <div className="bg-large">
-   <Navbar/>
+    <>
+      <FloatingWhatsApp
+        avatar={'logo.png'}
+        accountName="SmartbrainsKenya"
+        onClick={function noRefCheck() {}}
+        onClose={function noRefCheck() {}}
+        onLoopDone={function noRefCheck() {}}
+        onNotification={function noRefCheck() {}}
+        onSubmit={function noRefCheck() {}}
+        phoneNumber="0759689541"
+      />
+      <div className="bg-large">
+        <Navbar />
 
-  <div className="w-screen">
-     <Hero/>
-   <VideoPlay/>
-   <Courses/>
-   <Gallery/>
-   <Why_us/>
-   <Main/>
-   <Questions/>
-   <Footer/>
-  </div>
-  </div>
-   
-   </>
+        <div className="w-screen">
+          <Hero />
+          <VideoPlay />
+          <Courses />
+          <Gallery />
+          <Why_us />
+          <Main />
+          <Questions />
+          <Footer />
+        </div>
+      </div>
+    </>
   );
 }
