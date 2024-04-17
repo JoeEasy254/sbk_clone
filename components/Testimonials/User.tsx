@@ -1,13 +1,12 @@
 import React from 'react'
 import  {StarIcon} from 'lucide-react'
+import Image from 'next/image';
 export default function User() {
   return (
-  
-
-<div className=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
-   <div>
+    <div className=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+      <div>
         <div className="flex flex-col md:flex-row space-x-4 items-center m">
-          <img
+          <Image
             width="48"
             height="48"
             src="https://img.icons8.com/color/48/user.png"
@@ -27,25 +26,25 @@ export default function User() {
         </div>
 
         <div className="flex items-center space-x-1">
-          <img
+          <Image
             width="20"
             height="48"
             src="https://img.icons8.com/color/48/filled-star--v1.png"
             alt="filled-star--v1"
           />
-          <img
+          <Image
             width="20"
             height="20"
             src="https://img.icons8.com/color/48/filled-star--v1.png"
             alt="filled-star--v1"
           />
-          <img
+          <Image
             width="20"
             height="48"
             src="https://img.icons8.com/color/48/filled-star--v1.png"
             alt="filled-star--v1"
           />
-          <img
+          <Image
             width="20"
             height="48"
             src="https://img.icons8.com/color/48/filled-star--v1.png"
@@ -53,7 +52,6 @@ export default function User() {
           />
         </div>
       </div>
-</div>
-
+    </div>
   );
 }

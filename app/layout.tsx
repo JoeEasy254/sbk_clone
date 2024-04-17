@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 
+import "./styles.css";
+
+
 
 export const metadata: Metadata = {
   title: "Smartbrains-Africa",
@@ -15,9 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-       <script src="https://cdn.tailwindcss.com"></script>
+      <script src="https://cdn.tailwindcss.com" async></script>
 
-      <body >{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
