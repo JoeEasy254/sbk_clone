@@ -5,7 +5,7 @@ export default function User() {
   return (
     <div className=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
       <div>
-        <div className="flex flex-col md:flex-row space-x-4 items-center m">
+        <div className="flex flex-col md:flex-row space-x-4 items-center ">
           <Image
             width="48"
             height="48"

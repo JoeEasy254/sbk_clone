@@ -25,45 +25,88 @@ export const Main = () => {
   //   }
   // ])
   return (
-    <div className="mx-auto md:w-[950px] mb-[40px]">
-      <div>
-        <h1 className="text-center font-bold my-3 text-3xl mt-[50px]">
-          What Our Customers Say
-        </h1>
-      </div>
-      <Swiper
-        // install Swiper modules
-        modules={[Navigation, Pagination]}
-        spaceBetween={50}
-        slidesPerView={3}
-        navigation
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
-      >
-        <SwiperSlide>
-          <User />
-        </SwiperSlide>
-        <SwiperSlide>
-          <User />
-        </SwiperSlide>
-        <SwiperSlide>
-          <User />
-        </SwiperSlide>
-        <SwiperSlide>
-          <User />
-        </SwiperSlide>
-        <SwiperSlide>
-          <User />
-        </SwiperSlide>
-      </Swiper>
+    <>
+      <div className="hidden md:block mx-auto md:w-[950px] mb-[40px]">
+        <div>
+          <h1 className="text-center font-bold my-3 text-3xl mt-[50px]">
+            What Our Customers Say
+          </h1>
+        </div>
+        <Swiper
+          // install Swiper modules
+          modules={[Navigation, Pagination]}
+          spaceBetween={50}
+          slidesPerView={3}
+          navigation
+          pagination={{ clickable: true }}
+          scrollbar={{ draggable: true }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log("slide change")}
+        >
+          <SwiperSlide>
+            <User />
+          </SwiperSlide>
+          <SwiperSlide>
+            <User />
+          </SwiperSlide>
+          <SwiperSlide>
+            <User />
+          </SwiperSlide>
+          <SwiperSlide>
+            <User />
+          </SwiperSlide>
+          <SwiperSlide>
+            <User />
+          </SwiperSlide>
+        </Swiper>
 
-      <div className="flex justify-center  my-[50px]">
-        <Button className="bg-orange-600 w-[10rem] h-[8vh] text-white">
-       Join Us
-        </Button>
+        <div className="flex justify-center  my-[50px]">
+          <Button className="bg-orange-600 w-[10rem] h-[8vh] text-white">
+            Join Us
+          </Button>
+        </div>
       </div>
-    </div>
+
+      {/* mobile view */}
+
+      <div className="md:hidden mx-auto md:w-[950px] mb-[40px]">
+        <div>
+          <h1 className="text-center font-bold my-3 text-3xl mt-[50px]">
+            What Our Customers Say
+          </h1>
+        </div>
+        <Swiper
+          // install Swiper modules
+          modules={[Navigation, Pagination]}
+          navigation
+          pagination={{ clickable: true }}
+          scrollbar={{ draggable: true }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log("slide change")}
+        >
+          <SwiperSlide className="flex justify-center">
+            <User />
+          </SwiperSlide>
+          <SwiperSlide className="flex justify-center">
+            <User />
+          </SwiperSlide>
+          <SwiperSlide className="flex justify-center">
+            <User />
+          </SwiperSlide>
+          <SwiperSlide className="flex justify-center">
+            <User />
+          </SwiperSlide>
+          <SwiperSlide className="flex justify-center">
+            <User />
+          </SwiperSlide>
+        </Swiper>
+
+        <div className="flex justify-center  my-[50px]">
+          <Button className="bg-orange-600 w-[10rem] h-[8vh] text-white">
+            Join Us
+          </Button>
+        </div>
+      </div>
+    </>
   );
 };
