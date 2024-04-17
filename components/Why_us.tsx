@@ -10,7 +10,7 @@ import { Button } from './ui/button';
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -93,7 +93,11 @@ export default function Why_us() {
         <div className="md:hidden mx-4">
           <Swiper
             // install Swiper modules
-            modules={[Navigation, Pagination]}
+            modules={[Navigation, Pagination, Autoplay]}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
             navigation
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
@@ -102,7 +106,7 @@ export default function Why_us() {
           >
             <SwiperSlide className="flex justify-center">
               <div>
-                <div className="max-w-lg  bg-[#f4f4f4] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
+                <div className="max-w-lg  bg-[#ffff] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
                   <Image className=" rounded-md " src={ChildImg} alt="" />
 
                   <div className="p-5">

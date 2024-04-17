@@ -17,7 +17,7 @@ export default function Hero() {
           <div>
             <h1>Taught in</h1>
             <h1 className="text-purple-800 font-bold text-3xl">
-              <Counter/>
+              <Counter />
             </h1>
             <h1>Schools</h1>
           </div>
@@ -33,20 +33,18 @@ export default function Hero() {
             </div>
           </div>
         </div>
+        <div className=" md:hidden">
+          <Image src={KidsImage} alt="" />
+        </div>
         <div className="md:w-[400px] ">
           <Button className="bg-orange-600 text-white flex space-x-[60px]">
             <span>Join Us</span> <span> {">"} </span>{" "}
           </Button>
         </div>
       </div>
-
       <div className="hidden md:block">
         <Image src={KidsImage} alt="" />
       </div>
     </div>
-
-
-
-
   );
 }

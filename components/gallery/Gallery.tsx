@@ -1,7 +1,7 @@
 "use client"
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y,Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -24,7 +24,11 @@ export  const Gallery =  () => {
               </div>
               <Swiper
                 // install Swiper modules
-                modules={[Navigation, Pagination]}
+                modules={[Navigation, Pagination, Autoplay]}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
                 spaceBetween={30}
                 slidesPerView={3}
                 navigation
@@ -147,20 +151,20 @@ export  const Gallery =  () => {
               </div>
               <Swiper
                 // install Swiper modules
-                modules={[Navigation, Pagination]}
+                modules={[Navigation, Pagination, Autoplay]}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
                 navigation
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log("slide change")}
               >
-                <SwiperSlide className="flex justify-center">
-                  <div className="max-w-lg  bg-[#f4f4f4] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
-                    <Image
-                      className=" rounded-md "
-                      src={ChildImg}
-                      alt=""
-                    />
+                <SwiperSlide className="flex justify-center my-4">
+                  <div className="max-w-lg  bg-[#ffff] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
+                    <Image className=" rounded-md " src={ChildImg} alt="" />
 
                     <div className="p-5">
                       <h1 className="text-center font-semibold">
@@ -170,13 +174,9 @@ export  const Gallery =  () => {
                   </div>
                 </SwiperSlide>
 
-                <SwiperSlide className="flex justify-center">
-                  <div className="max-w-lg  bg-[#f4f4f4] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
-                    <Image
-                      className=" rounded-md  "
-                      src={ChildImg}
-                      alt=""
-                    />
+                <SwiperSlide className="flex justify-center my-4">
+                  <div className="max-w-lg  bg-[#ffff] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
+                    <Image className=" rounded-md  " src={ChildImg} alt="" />
 
                     <div className="p-5">
                       <h1 className="text-center font-semibold">
@@ -186,13 +186,9 @@ export  const Gallery =  () => {
                   </div>
                 </SwiperSlide>
 
-                <SwiperSlide className="flex justify-center">
-                  <div className="max-w-lg  bg-[#f4f4f4] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
-                    <Image
-                      className=" rounded-md  "
-                      src={ChildImg}
-                      alt=""
-                    />
+                <SwiperSlide className="flex justify-center my-4">
+                  <div className="max-w-lg  bg-[#ffff] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
+                    <Image className=" rounded-md  " src={ChildImg} alt="" />
 
                     <div className="p-5">
                       <h1 className="text-center font-semibold">
@@ -202,13 +198,9 @@ export  const Gallery =  () => {
                   </div>
                 </SwiperSlide>
 
-                <SwiperSlide className="flex justify-center">
-                  <div className="max-w-lg  bg-[#f4f4f4] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
-                    <Image
-                      className=" rounded-md  "
-                      src={ChildImg}
-                      alt=""
-                    />
+                <SwiperSlide className="flex justify-center my-4">
+                  <div className="max-w-lg  bg-[#ffff] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
+                    <Image className=" rounded-md  " src={ChildImg} alt="" />
 
                     <div className="p-5">
                       <h1 className="text-center font-semibold">
@@ -218,13 +210,9 @@ export  const Gallery =  () => {
                   </div>
                 </SwiperSlide>
 
-                <SwiperSlide className="flex justify-center">
-                  <div className="max-w-lg  bg-[#f4f4f4] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
-                    <Image
-                      className=" rounded-md  "
-                      src={ChildImg}
-                      alt=""
-                    />
+                <SwiperSlide className="flex justify-center my-4">
+                  <div className="max-w-lg  bg-[#ffff] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
+                    <Image className=" rounded-md  " src={ChildImg} alt="" />
 
                     <div className="p-5">
                       <h1 className="text-center font-semibold">
@@ -233,13 +221,9 @@ export  const Gallery =  () => {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="flex justify-center">
-                  <div className="max-w-lg  bg-[#f4f4f4] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
-                    <Image
-                      className=" rounded-md "
-                      src={ChildImg}
-                      alt=""
-                    />
+                <SwiperSlide className="flex justify-center my-4">
+                  <div className="max-w-lg  bg-[#ffff] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
+                    <Image className=" rounded-md " src={ChildImg} alt="" />
 
                     <div className="p-5">
                       <h1 className="text-center font-semibold">

@@ -1,7 +1,7 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -34,7 +34,11 @@ export const Main = () => {
         </div>
         <Swiper
           // install Swiper modules
-          modules={[Navigation, Pagination]}
+          modules={[Navigation, Pagination, Autoplay]}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           spaceBetween={50}
           slidesPerView={3}
           navigation
@@ -69,7 +73,7 @@ export const Main = () => {
 
       {/* mobile view */}
 
-      <div className="md:hidden mx-auto md:w-[950px] mb-[40px]">
+      <div className="md:hidden mx-4 md:mx-auto md:w-[950px] mb-[40px]">
         <div>
           <h1 className="text-center font-bold my-3 text-3xl mt-[50px]">
             What Our Customers Say
@@ -77,7 +81,11 @@ export const Main = () => {
         </div>
         <Swiper
           // install Swiper modules
-          modules={[Navigation, Pagination]}
+          modules={[Navigation, Pagination, Autoplay]}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           navigation
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}

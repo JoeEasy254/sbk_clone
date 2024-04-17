@@ -4,7 +4,7 @@ import getStarted from '/videos/get-started.mp4';
 export default function VideoPlay() {
   return (
     <>
-      <div className=" md:w-[950px] md:mb-[40px] mx-4  md:mx-auto">
+      <div className=" md:w-[950px] md:mb-[40px] mx-4  md:mx-auto hidden md:block">
         <h1 className="text-center my-4 font-bold text-2xl">
           A word from our Director
         </h1>
