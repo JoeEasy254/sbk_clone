@@ -26,7 +26,7 @@ export  const Gallery =  () => {
                 // install Swiper modules
                 modules={[Navigation, Pagination, Autoplay]}
                 autoplay={{
-                  delay: 2500,
+                  delay: 2000,
                   disableOnInteraction: false,
                 }}
                 spaceBetween={30}
@@ -153,7 +153,7 @@ export  const Gallery =  () => {
                 // install Swiper modules
                 modules={[Navigation, Pagination, Autoplay]}
                 autoplay={{
-                  delay: 2500,
+                  delay: 2000,
                   disableOnInteraction: false,
                 }}
                 navigation

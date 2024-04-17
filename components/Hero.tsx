@@ -33,7 +33,8 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className=" md:hidden">
+        <div className=" md:hidden relative">
+          
           <Image src={KidsImage} alt="" />
         </div>
         <div className="md:w-[400px] ">

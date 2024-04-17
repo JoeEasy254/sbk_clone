@@ -119,7 +119,7 @@ export default function Why_us() {
             </SwiperSlide>
             <SwiperSlide className="flex justify-center">
               <div>
-                <div className="max-w-lg  bg-[#f4f4f4] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
+                <div className="max-w-lg  bg-[#ffff] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
                   <Image className=" rounded-md " src={ChildImg} alt="" />
 
                   <div className="p-5">
@@ -132,7 +132,7 @@ export default function Why_us() {
             </SwiperSlide>
             <SwiperSlide className="flex justify-center">
               <div>
-                <div className="max-w-lg  bg-[#f4f4f4] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
+                <div className="max-w-lg  bg-[#ffff] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
                   <Image className=" rounded-md " src={ChildImg} alt="" />
 
                   <div className="p-5">
