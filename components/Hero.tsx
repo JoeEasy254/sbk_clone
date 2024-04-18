@@ -6,8 +6,8 @@ import { Button } from "./ui/button";
 import { Counter } from "./Counter";
 export default function Hero() {
   return (
-    <div className="flex justify-between mx-auto  items-center md:w-[1110px] mt-[40px] p-3 md:p-0">
-      <div className="flex flex-col space-y-6">
+    <div className="flex justify-between mx-auto  items-center md:w-[1110px] pt-[120px] md:mt-[120px] p-3 md:p-0">
+      <div className="flex flex-col space-y-6 md:mt-[120px]">
         <h1 className="font-bold text-3xl w-[50vw]">
           Coding in Kenyan Schools
         </h1>
@@ -34,7 +34,6 @@ export default function Hero() {
           </div>
         </div>
         <div className=" md:hidden relative">
-          
           <Image src={KidsImage} alt="" />
         </div>
         <div className="md:w-[400px] ">
