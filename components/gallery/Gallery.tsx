@@ -34,8 +34,7 @@ export  const Gallery =  () => {
                 navigation
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log("slide change")}
+            
               >
                 <SwiperSlide>
                   <div className="max-w-lg  bg-[#f4f4f4] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
@@ -159,8 +158,7 @@ export  const Gallery =  () => {
                 navigation
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log("slide change")}
+            
               >
                 <SwiperSlide className="flex justify-center my-4">
                   <div className="max-w-lg  bg-[#ffff] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 ">
