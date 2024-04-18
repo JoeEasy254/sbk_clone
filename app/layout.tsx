@@ -4,7 +4,7 @@ import "./globals.css";
 
 import "./styles.css";
 
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Smartbrains-Africa",
@@ -18,8 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-     
-
+      <SpeedInsights />
       <body>{children}</body>
     </html>
   );
