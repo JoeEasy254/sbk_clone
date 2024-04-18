@@ -15,16 +15,18 @@ import Logo from '../app/assets/logo_sbk-removebg-preview.png'
 export default function Home() {
   return (
     <>
-      <FloatingWhatsApp
-        avatar={'logo.png'}
-        accountName="SmartbrainsKenya"
-        onClick={function noRefCheck() {}}
-        onClose={function noRefCheck() {}}
-        onLoopDone={function noRefCheck() {}}
-        onNotification={function noRefCheck() {}}
-        onSubmit={function noRefCheck() {}}
-        phoneNumber="0759689541"
-      />
+      <div className="z-[9999]">
+        <FloatingWhatsApp
+          avatar={"logo.png"}
+          accountName="SmartbrainsKenya"
+          onClick={function noRefCheck() {}}
+          onClose={function noRefCheck() {}}
+          onLoopDone={function noRefCheck() {}}
+          onNotification={function noRefCheck() {}}
+          onSubmit={function noRefCheck() {}}
+          phoneNumber="0759689541"
+        />
+      </div>
       <div className="bg-large">
         <Navbar />
 

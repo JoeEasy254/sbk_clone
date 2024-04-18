@@ -5,7 +5,7 @@ import Image from "next/image";
 import { NavSmall } from "./NavSmall";
 export default function Navbar() {
   return (
-    <div className="flex justify-between p-3 md:p-4 items-center  bg-[#eceeee5e] md:bg-[#eee] fixed z-[9999] top-0 left-0 right-0 md:mb-[60px]">
+    <div className="flex justify-between p-3 md:p-4 items-center  bg-[#eceeee5e] md:bg-[#eee] fixed z-[9990] top-0 left-0 right-0 md:mb-[60px]">
       <div className="flex  items-center justify-center m-4 ">
         <div className="mr-[20px] hidden md:block">
           <Image src={Logo} alt="" className="h-[10vh] w-auto" />

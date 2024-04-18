@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <script src="https://cdn.tailwindcss.com" async></script>
+     
 
       <body>{children}</body>
     </html>
