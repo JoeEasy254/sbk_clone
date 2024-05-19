@@ -19,7 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <SpeedInsights />
-      <body>{children}</body>
+      <body>
+        <div className="container">{children}</div>
+      </body>
     </html>
   );
 }
